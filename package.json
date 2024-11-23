@@ -11,12 +11,10 @@
   },
   "author": "Skyler Riggle",
   "license": "ISC",
-  "dependencies": {
-    "typescript": "^5.7.2"
-  },
   "devDependencies": {
     "gh-pages": "^6.2.0",
     "parcel": "^2.13.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
