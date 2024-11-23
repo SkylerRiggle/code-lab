@@ -2,10 +2,10 @@
   "name": "code-lab",
   "version": "1.0.0",
   "description": "An application for getting familiar with the basics of computer programming.",
-  "main": "index.js",
+  "source": "index.html",
   "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node dist/index.js",
+    "build": "parcel build --no-optimize --public-url /code-lab",
+    "start": "parcel",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0",
+    "parcel": "^2.13.0",
     "ts-node": "^10.9.2"
   }
 }
