@@ -2,7 +2,7 @@
   "name": "code-lab",
   "version": "1.0.0",
   "description": "An application for getting familiar with the basics of computer programming.",
-  "source": "index.html",
+  "source": "public/index.html",
   "scripts": {
     "clean": "npx rimraf dist",
     "build": "npm run clean && parcel build --no-optimize --public-url /code-lab",
