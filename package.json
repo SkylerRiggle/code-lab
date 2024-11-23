@@ -4,7 +4,8 @@
   "description": "An application for getting familiar with the basics of computer programming.",
   "source": "index.html",
   "scripts": {
-    "build": "parcel build --no-optimize --public-url /code-lab",
+    "clean": "npx rimraf dist",
+    "build": "npm run clean && parcel build --no-optimize --public-url /code-lab",
     "start": "parcel",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -14,6 +15,7 @@
   "devDependencies": {
     "gh-pages": "^6.2.0",
     "parcel": "^2.13.0",
+    "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   }
